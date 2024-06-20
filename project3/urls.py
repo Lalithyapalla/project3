@@ -17,10 +17,15 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from app.views import *
-
+from app2.views import *
+from app3.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('abc/',abc,name='abc'),
     path('pqr/',pqr,name='pqr'),
+    path('fun1/',fun1,name='fun1'),
+    path('fun2/',fun2,name='fun2'),
+    path('fun3/',fun3,name='fun3'),
+    path('fun4/',fun4,name='fun4'),
 ]
